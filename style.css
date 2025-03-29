@@ -1,0 +1,83 @@
+/* fonte roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  background-color: #f4f4f4;
+  color: #000;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/* code */
+code {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 2px 4px;
+}
+
+/* header */
+header {
+  background-color: #1e6ec2;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+header p a {
+  color: #fff;
+  text-decoration: none;
+}
+header p a:hover {
+  text-decoration: underline;
+}
+
+/* main */
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+main h2 {
+  text-align: center;
+}
+
+main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+}
+
+main ul li {
+  background: url(./img/git.png) no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 25px;
+}

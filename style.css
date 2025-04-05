@@ -1,3 +1,13 @@
+/* animação */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
 /* fonte roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
@@ -26,6 +36,7 @@ code {
 
 /* header */
 header {
+  position: relative;
   background-color: #1e6ec2;
   color: #fff;
   padding: 20px;
@@ -36,13 +47,33 @@ header {
   align-items: center;
   gap: 10px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 header h1 {
+  z-index: 1;
   font-size: 2rem;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+  width: 70px;
+  position: absolute;
+  animation: pulse 1s ease-in-out infinite alternate;
+}
+header img#git {
+  left: 20px;
+  top: 20px;
+}
+
+header img#github {
+  right: 20px;
+  top: 20px;
 }
 
 header p {
+  z-index: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
 }
 header p a {
@@ -67,6 +98,18 @@ main {
 
 main h2 {
   text-align: center;
+}
+main h2 + p {
+  font-weight: bold;
+  text-align: center;
+}
+
+main h2 + p a {
+  color: #000;
+  text-decoration: none;
+}
+main h2 + p a:hover {
+  text-decoration: underline;
 }
 
 main ul {

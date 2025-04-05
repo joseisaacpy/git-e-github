@@ -96,6 +96,63 @@
           <code>git branch -a</code>
           <p>Verificar todos os branches do repositório local.</p>
         </li>
+        <!-- Comando -->
+        <li>
+          <code>git log</code>
+          <p>Exibe o histórico oficial de commits do repositório.</p>
+        </li>
+        <!-- Comando -->
+        <li>
+          <code>git reflog</code>
+          <p>
+            Mostra todas as movimentações do HEAD, incluindo commits "perdidos"
+            ou fora da linha do tempo principal.
+          </p>
+        </li>
+
+        <!-- Comando -->
+
+        <li>
+          <code>git reset --soft &lt;commit&gt;</code>
+          <p>
+            Move o HEAD para o commit indicado, mantendo as alterações na
+            staging area e no diretório de trabalho.
+          </p>
+        </li>
+        <!-- Comando -->
+        <li>
+          <code>git reset --mixed &lt;commit&gt;</code>
+          <p>
+            Move o HEAD para o commit indicado e limpa a staging area, mas
+            mantém as alterações no diretório de trabalho.
+          </p>
+        </li>
+        <!-- Comando -->
+        <li>
+          <code>git reset --hard &lt;commit&gt;</code>
+          <p>
+            Move o HEAD para o commit indicado e descarta tanto a staging area
+            quanto as alterações no diretório de trabalho.
+          </p>
+        </li>
+        <!-- Comando -->
+        <li>
+          <code>git branch `nome da branch`</code> ou <code>git branch</code>
+          <p>
+            Cria uma nova branch com o nome escolhido, mas não muda de branch
+            automaticamente. No outro caso, mostra as branches existentes.
+          </p>
+        </li>
+        <!-- Comando -->
+        <li>
+          <code>git checkout `nome da branch`</code>
+          <p>Muda de branch para a escolhida.</p>
+        </li>
+        <!-- Comando -->
+        <li>
+          <code>git checkout -b `nome da branch`</code>
+          <p>Cria uma nova branch e muda de branch para ela.</p>
+        </li>
       </ul>
     </main>
   </body>

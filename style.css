@@ -124,3 +124,35 @@ main ul li {
   background-size: 20px 20px;
   padding-left: 25px;
 }
+
+main .resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+main .resume img {
+  border-radius: 10px;
+  border: 2px solid #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 95dvw;
+}
+
+main .resume a button {
+  font-size: 1.2rem;
+  max-width: 95dvw;
+  background-color: #f05133;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+main .resume a button:hover {
+  background-color: #da735e;
+}
